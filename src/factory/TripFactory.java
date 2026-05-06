@@ -11,6 +11,8 @@ public class TripFactory {
 
     private static final String[] CITIES = {
             "Paris", "Lyon", "Marseille", "Lille", "Bordeaux"
+
+
     };
 
 
@@ -52,13 +54,23 @@ public class TripFactory {
                 i,
                 "DRIVER_" + random.nextInt(1, 100),
                 "USER_" + random.nextInt(1, 1000),
+                
                 CITIES[random.nextInt(CITIES.length)],
                 distance,
                 duration,
+
                 price,
                 rating,
+
                 start,
                 end
+
+
+
         );
+
+
+
+
     }
 }

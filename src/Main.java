@@ -4,6 +4,7 @@ import exo.Partie1;
 import exo.Partie2;
 
 import exo.Partie3;
+import exo.Partie4;
 
 import java.util.List;
 
@@ -35,5 +36,12 @@ public class Main {
         Partie3 p3 = new Partie3();
         System.out.println("top10 cher=" + p3.top10ExpensiveTrips(trips).size());
         System.out.println("best=" + p3.bestTrip(trips));
+
+        // p 4 parallel
+        Partie4 p4 = new Partie4();
+        System.out.println("rev seq=" + p4.totalRevenueSequential(trips));
+        System.out.println("rev par=" + p4.totalRevenueParallel(trips));
+        System.out.println("count ville //=" + p4.countByCityParallel(trips));
+        System.out.println("premium //=" + p4.premiumTripsParallel(trips).size());
     }
 }
