@@ -3,6 +3,8 @@ import models.Trip;
 import exo.Partie1;
 import exo.Partie2;
 
+import exo.Partie3;
+
 import java.util.List;
 
 public class Main {
@@ -28,5 +30,10 @@ public class Main {
         System.out.println("/ v=" + p2.countByCity(trips));
         System.out.println("$ driver " + p2.revenueByDriver(trips));
         System.out.println("tmp moy / ville=" + p2.avgDurationByCity(trips));
+
+        // p 3 tri / recherche
+        Partie3 p3 = new Partie3();
+        System.out.println("top10 cher=" + p3.top10ExpensiveTrips(trips).size());
+        System.out.println("best=" + p3.bestTrip(trips));
     }
 }
